@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* { margin: 0; padding: 0;}
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+@media screen and (min-width: 320px){
+    #facebody { height: auto; width: 100%; position: relative; font-family: 'Roboto', sans-serif;}
+    #home { height: 100vh; width: 100%; position: absolute; margin: 0; background: #0B2545;}
+    .home-logo { height: 80px; width: 80px; position: absolute; margin: 5px 0 0 0; background: url(../images/logo.png) center no-repeat; background-size: contain;}
+    nav { display: none;}
+    nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 32px; position: relative; transition: all ease-in-out .5s;}
+    nav a:hover { color: rgba(243,0,196,1);}
+
+    .value-boxes-events { height: 500px; width: 90%; position: absolute; margin: 100px 0 0 5%; }
+    .value-boxes-events div { height: 160px; width: 95px; position: absolute; padding-top: 15px; background: linear-gradient( to right, rgba(243,0,196,1) 20%, rgba(76,0,253,1) 80%);; background-size: 500% auto; animation: textShine 5s ease-in-out infinite alternate; border-radius: 25px;}
+    .value-boxes-events div article { height: 50px; width: 85px; position: absolute; margin: 100px 0 0 5px;}
+    .value-boxes-events div h1, h2, h3 { color: #fff; font-size: 11px; font-weight: 700; text-align: left;}
+    .value-boxes-events div img { height: 80px; width: 80px; position: absolute; margin: 10px 0 0 6px; border: 2px solid #000;}
+}
+
+@media screen and (min-width: 480px){
+    #facebody { height: auto; width: 100%; position: relative; font-family: 'Roboto', sans-serif;}
+    #home { height: 100vh; width: 100%; position: absolute; margin: 0; background: #0B2545;}
+    .home-logo { height: 80px; width: 80px; position: absolute; margin: 5px 0 0 0; background: url(../images/logo.png) center no-repeat; background-size: contain;}
+    nav { display: none;}
+    nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 32px; position: relative; transition: all ease-in-out .5s;}
+    nav a:hover { color: rgba(243,0,196,1);}
+
+    .value-boxes-events { height: 500px; width: 90%; position: absolute; margin: 100px 0 0 5%; }
+    .value-boxes-events div { height: 115px; width: 184px; position: absolute; padding-top: 15px; background: linear-gradient( to right, rgba(243,0,196,1) 20%, rgba(76,0,253,1) 80%);; background-size: 500% auto; animation: textShine 5s ease-in-out infinite alternate; border-radius: 25px;}
+    .value-boxes-events div article { height: 88px; width: 85px; position: absolute; margin: 12px 0 0 95px;}
+    .value-boxes-events div h1, h2, h3 { color: #fff; font-size: 11px; font-weight: 700; text-align: left;}
+    .value-boxes-events div img { height: 80px; width: 80px; position: absolute; margin: 10px 0 0 6px; border: 2px solid #000;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px){
+    #facebody { height: auto; width: 100%; position: relative; font-family: 'Roboto', sans-serif;}
+    #home { height: 100vh; width: 100%; position: absolute; margin: 0; background: #0B2545;}
+    .home-logo { height: 80px; width: 80px; position: absolute; margin: 5px 0 0 0; background: url(../images/logo.png) center no-repeat; background-size: contain;}
+    nav { display: none;}
+    nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 32px; position: relative; transition: all ease-in-out .5s;}
+    nav a:hover { color: rgba(243,0,196,1);}
+
+    .value-boxes-events { height: 500px; width: 90%; position: absolute; margin: 130px 0 0 5%; }
+    .value-boxes-events div { height: 115px; width: 222px; position: absolute; padding-top: 15px; background: linear-gradient( to right, rgba(243,0,196,1) 20%, rgba(76,0,253,1) 80%);; background-size: 500% auto; animation: textShine 5s ease-in-out infinite alternate; border-radius: 25px;}
+    .value-boxes-events div article { height: 88px; width: 120px; position: absolute; margin: 12px 0 0 95px;}
+    .value-boxes-events div h1, h2, h3 { color: #fff; font-size: 16px; font-weight: 700; text-align: left;}
+    .value-boxes-events div img { height: 80px; width: 80px; position: absolute; margin: 10px 0 0 6px; border: 2px solid #000;}
+}
+
+@media screen and (min-width: 1024px){
+    #facebody { height: auto; width: 100%; position: relative; font-family: 'Roboto', sans-serif;}
+    #home { height: 100vh; width: 100%; position: absolute; margin: 0; background: #0B2545;}
+    .home-logo { height: 80px; width: 80px; position: absolute; margin: 5px 0 0 0; background: url(../images/logo.png) center no-repeat; background-size: contain;}
+    nav { height: 38px; width: 900px; margin: 26px 0 0 calc(100% - 950px); display: flex; justify-content: space-between;}
+    nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 32px; position: relative; transition: all ease-in-out .5s;}
+    nav a:hover { color: rgba(243,0,196,1);}
+    
+    .value-boxes-events { height: 500px; width: 1152px; position: absolute; margin: 100px 0 0 calc(50% - 576px); }
+    .value-boxes-events div { height: 210px; width: 367px; position: absolute; padding-top: 15px; background: linear-gradient( to right, rgba(243,0,196,1) 20%, rgba(76,0,253,1) 80%);; background-size: 500% auto; animation: textShine 5s ease-in-out infinite alternate; border-radius: 25px;}
+    .value-boxes-events div article { height: 160px; width: 190px; position: absolute; margin: 0 0 0 160px;}
+    .value-boxes-events div h1, h2, h3 { color: #fff; font-size: 22px; font-weight: 700; text-align: left;}
+    .value-boxes-events div img { height: 140px; width: 140px; position: absolute; margin: 0 0 0 10px; border: 4px solid #000;}
+}
