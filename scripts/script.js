@@ -187,7 +187,7 @@ searchInput.addEventListener('keydown', (event) => {
 
 function performSearch() {
     const searchTerm = searchInput.value.toLowerCase();
-    const sections = document.querySelectorAll('.value-boxes-huges article'); // Select all articles within div elements
+    const sections = document.querySelectorAll('[class^="value-boxes-"] article'); // Select all articles within div elements
     let found = false;
 
     sections.forEach(section => {
