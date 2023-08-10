@@ -150,7 +150,7 @@ xhr.onreadystatechange = () => {
         }
     }
 
-    valueBoxes.style.height = rows * (newDivHeight + 25) + 'px';
+    valueBoxes.style.height = (rows - 1) * (newDivHeight + 25) + 'px';
     const home = document.getElementById('home');
     const computedStyle = window.getComputedStyle(valueBoxes);
     const marginTop = parseFloat(computedStyle.marginTop);
