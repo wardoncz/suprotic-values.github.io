@@ -19,6 +19,7 @@
     }
 }
 
+
 @media screen and (min-width: 320px){
     #facebody { height: auto; width: 100%; position: relative; font-family: 'Roboto', sans-serif;}
     #home { height: 100vh; width: 100%; position: absolute; margin: 0; background: #0B2545;}
@@ -94,7 +95,7 @@
     nav a:hover { color: rgba(243,0,196,1);}
     
     .value-boxes-huges { height: 500px; width: 1152px; position: absolute; margin: 120px 0 0 calc(50% - 576px); }
-    .value-boxes-huges div { height: 170px; width: 367px; position: absolute; padding-top: 15px; background: linear-gradient( to right, rgba(243,0,196,1) 20%, rgba(76,0,253,1) 80%); background-size: 500% auto; animation: textShine 5s ease-in-out infinite alternate; border-radius: 25px;}
+    .value-boxes-huges div { height: 170px; width: 367px; position: absolute; padding-top: 15px; background: linear-gradient( to right, rgba(243,0,196,1) 20%, rgba(76,0,253,1) 80%);; background-size: 500% auto; animation: textShine 5s ease-in-out infinite alternate; border-radius: 25px;}
     .value-boxes-huges div article { height: 160px; width: 190px; position: absolute; margin: 0 0 0 160px;}
     .value-boxes-huges div h1, h2, h3 { color: #fff; font-size: 22px; font-weight: 700; text-align: left;}
     .value-boxes-huges div img { height: 140px; width: 140px; position: absolute; margin: 0 0 0 10px;}
