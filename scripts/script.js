@@ -171,3 +171,74 @@ xhr.onreadystatechange = () => {
 
 xhr.open("GET", `https://items-api-c7wz.onrender.com/items`)
 xhr.send()
+
+// script.js
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+const searchResults = document.getElementById('search-results');
+
+searchButton.addEventListener('click', performSearch);
+searchInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Prevent form submission
+        performSearch();
+    }
+});
+
+function performSearch() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const sections = document.querySelectorAll('.value-boxes-huges article'); // Select all articles within div elements
+    let found = false;
+
+    sections.forEach(section => {
+        const h1 = section.querySelector('h1'); // Look for h1 tag within the article
+        if (h1 && h1.textContent.toLowerCase().includes(searchTerm)) {
+            found = true;
+            searchResults.innerHTML = ''; // Clear previous search results
+            h1.classList.add('highlighted');
+            scrollToSection(section);
+
+            setTimeout(() => {
+                h1.classList.add('fade-out-animation');
+
+                // Remove both classes after the animation completes
+                setTimeout(() => {
+                    h1.classList.remove('highlighted', 'fade-out-animation');
+                }, 2000); // Adjust the duration to match the animation duration
+            }, 1000); // Adjust the delay as needed
+
+        }
+    });
+
+    if (!found) {
+        alert(`No pet found with the name: ${searchTerm}`);
+    }
+}
+
+function scrollToSection(section) {
+    let position = 0;
+    if (window.innerWidth > 1023){
+        position = section.getBoundingClientRect().top + window.scrollY - 350;
+        console.log('PC/Tablet')
+    } else if (window.innerWidth > 768 && window.innerWidth < 821) {
+        position = section.getBoundingClientRect().top + window.scrollY - 400;
+        console.log('Tablet')
+    } else if (window.innerWidth > 479){
+        position = section.getBoundingClientRect().top + window.scrollY - 200;
+        console.log('Mobil - siroky')
+    } else if (window.innerWidth > 319){
+        position = section.getBoundingClientRect().top + window.scrollY - 300;
+        console.log('Mobil - vysoky')
+    } else {
+        console.log('Bad width')
+        position = section.getBoundingClientRect().top + window.scrollY - 100;
+    }
+    console.log(window.innerWidth)
+    console.log(position)
+    window.scrollTo({
+        top: position,
+        behavior: 'smooth'
+    });
+}
+
+
