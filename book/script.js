@@ -1,4 +1,4 @@
-document.getElementById("myForm").addEventListener("click", function() {
+document.getElementById("submit").addEventListener("click", function() {
     // Get the values from the input boxes
     const fName = document.getElementById("fname").value;
     const sName = document.getElementById("sname").value;
