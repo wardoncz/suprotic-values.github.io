@@ -9,7 +9,8 @@
 <body>
     <div id="facebody">
         <div id="home">
-            <a href="#" id="nav-icon" onclick="navClick()">
+            <div id="bg-blur"></div>
+            <a id="nav-icon" onclick="navClick()">
                 <div id="navFir"></div>
                 <div id="navSec"></div>
                 <div id="navLas"></div>
@@ -17,13 +18,15 @@
             <nav id="nav">
                 <div class="logo">
                     <div class="logo-circle"></div>
-                    <div class="company-name"></div>
+                    <p class="company-name">Suprotic Values</p>
                 </div>
-                <h2>Values</h2>
-                <a href="">Titanics</a>
-                <a href="">Huges</a>
-                <a href="">Exclusives</a>
-                <a href="">Stat pets</a>
+                <a id="values-btn" onclick="valuesClick()">Values<span id="values-btn-arrow">▼</span></a>
+                <div id="values-box">
+                    <a href="">Titanics</a>
+                    <a href="">Huges</a>
+                    <a href="">Exclusives</a>
+                    <a href="">Stat pets</a>
+                </div>
             </nav>
         </div>
     </div>

@@ -3,16 +3,18 @@
 body { font-family: 'Fira Sans', sans-serif;}
 
 #facebody { height: auto; position: relative;}
-#home { height: 100vh; width: 100%; position: relative; background: #001D3D;}
+#home { height: 100vh; width: 100%; position: relative; background: #001D3D url(../media/pet99.png) top no-repeat; background-size: cover; backdrop-filter: blur(10px);}
 
 #nav-icon { height: 32px; width: 35.76px; position: absolute; margin: 35px 0 0 calc(100% - 70px);}
 #nav-icon div:first-child { margin: 0;}
 #nav-icon div { height: 5px; width: 100%; position: relative; display: block; border-radius: 10px; margin-top: 7px; background: #fff;}
 
 #nav { height: 100vh; width: 400px; position: absolute; margin-left: -50%; background: #003566; transition: all 1s ease-in-out;}
-#nav h2 { padding: 35px 0 0 35px; font-size: 64px; font-weight: 700; color: #fff; display: flex;}
-#nav a { padding: 35px 0 0 125px; font-size: 48px; font-weight: 400; color: #fff; text-decoration: none; position: relative; display: block;}
+#values-btn { padding: 35px 0 0 35px; font-size: 32px; font-weight: 700; color: #fff; display: flex;}
+#values-btn span {padding: 5px 0 0 20px; transition: all .3s ease-in-out; font-size: 27px;}
+#values-box { transition: all .5s ease-in-out;}
+#values-box a { padding: 35px 0 0 75px; font-size: 24px; font-weight: 400; color: #fff; text-decoration: none; position: relative; display: block;}
 
-.logo { height: 100px; width: 335px; position: relative; padding: 35px 0 0 35px; display: flex; justify-content: space-between;}
-.logo-circle { height: 100px; width: 100px; position: relative; border-radius: 100%; background: #fff;}
-.company-name { height: 100px; width: 200px; position: relative; background: #fff;}
+.logo { height: 100px; width: 365px; position: relative; padding: 35px 0 0 35px; display: flex; justify-content: space-between;}
+.logo-circle { height: 100px; width: 100px; position: relative; border-radius: 100%; background: url(../media/logo.jpeg) center no-repeat; background-size: cover;}
+.company-name { width: 250px; font-size: 32px; font-weight: 700; color: #fff; position: relative; padding-top: 35px;}
