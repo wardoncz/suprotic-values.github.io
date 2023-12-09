@@ -3,18 +3,17 @@
 body { font-family: 'Fira Sans', sans-serif;}
 
 #facebody { height: auto; position: relative;}
-#home { height: 100vh; width: 100%; position: relative; background: #001D3D url(../media/pet99.png) top no-repeat; background-size: cover; backdrop-filter: blur(10px);}
+#home { height: 100vh; width: 100%; position: relative; background: #001D3D;}
 
 #nav-icon { height: 32px; width: 35.76px; position: absolute; margin: 35px 0 0 calc(100% - 70px);}
 #nav-icon div:first-child { margin: 0;}
 #nav-icon div { height: 5px; width: 100%; position: relative; display: block; border-radius: 10px; margin-top: 7px; background: #fff;}
 
-#nav { height: 100vh; width: 400px; position: absolute; margin-left: -50%; background: #003566; transition: all 1s ease-in-out;}
-#values-btn { padding: 35px 0 0 35px; font-size: 32px; font-weight: 700; color: #fff; display: flex;}
-#values-btn span {padding: 5px 0 0 20px; transition: all .3s ease-in-out; font-size: 27px;}
-#values-box { transition: all .5s ease-in-out;}
-#values-box a { padding: 35px 0 0 75px; font-size: 24px; font-weight: 400; color: #fff; text-decoration: none; position: relative; display: block;}
+#nav { height: 100vh; width: 250px; position: absolute; margin-left: -50%; background: #003566; transition: all 1s ease-in-out; backdrop-filter: blur(10px);}
+#values-box { padding: 50px 0 0 0;}
+#values-box a { padding: 15px 0 15px 35px; font-size: 24px; font-weight: 500; color: #fff; text-decoration: none; position: relative; display: block; background: rgba(0, 0, 0, 0); border: .5px solid rgba(0, 0, 0, 0); transition: border ease-in-out;}
+#values-box a:hover {border: .5px solid rgba(0, 0, 0, .8); transition: border ease-in-out; background: rgba(0, 0, 0, .25);}
 
-.logo { height: 100px; width: 365px; position: relative; padding: 35px 0 0 35px; display: flex; justify-content: space-between;}
-.logo-circle { height: 100px; width: 100px; position: relative; border-radius: 100%; background: url(../media/logo.jpeg) center no-repeat; background-size: cover;}
-.company-name { width: 250px; font-size: 32px; font-weight: 700; color: #fff; position: relative; padding-top: 35px;}
+header { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;}
+header h1 { color: #FFF; font-size: 78px; font-weight: 900;}
+header p { color: #FFF; font-size: 26px; font-weight: 400; text-align: center; padding-top: 10px;}
