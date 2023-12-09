@@ -49,4 +49,4 @@ header { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50
 header h1 { font-size: 78px; font-weight: 900;}
 header p { font-size: 26px; font-weight: 400; text-align: center; padding-top: 10px;}
 
-#stars { position: fixed; top: 50%; left: 50%; height: 1px; width: 1px; background-color: #fff; border-radius: 50%; -webkit-animation: zoom 16s alternate infinite; animation: zoom 16s alternate infinite;}
+#stars { position: fixed; top: 50%; left: 50%; height: 1px; width: 1px; background-color: #fff; border-radius: 100%; -webkit-animation: zoom 16s alternate infinite; animation: zoom 16s alternate infinite;}
