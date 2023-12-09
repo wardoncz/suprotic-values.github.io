@@ -2,18 +2,31 @@
 * { margin: 0; padding: 0;}
 body { font-family: 'Fira Sans', sans-serif;}
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 #facebody { height: auto; position: relative;}
-#home { height: 100vh; width: 100%; position: relative; background: #001D3D;}
+#home { height: 100vh; width: 100%; position: relative; background: linear-gradient(-45deg, #1a0c33, #2b144a, #3e205c, #552c6c, #74398a); background-size: 400% 400%; animation: gradient 15s ease infinite;}
+
 
 #nav-icon { height: 32px; width: 35.76px; position: absolute; margin: 35px 0 0 calc(100% - 70px);}
 #nav-icon div:first-child { margin: 0;}
 #nav-icon div { height: 5px; width: 100%; position: relative; display: block; border-radius: 10px; margin-top: 7px; background: #fff;}
 
-#nav { height: 100vh; width: 250px; position: absolute; margin-left: -50%; background: #003566; transition: all 1s ease-in-out; backdrop-filter: blur(10px);}
+#nav { height: 100vh; width: 250px; position: absolute; margin-left: -50%; background: rgba(0, 0, 0, .35); border-right: 1px solid rgba(255, 255, 255, .2); transition: all 1s ease-in-out; backdrop-filter: blur(10px);}
 #values-box { padding: 50px 0 0 0;}
-#values-box a { padding: 15px 0 15px 35px; font-size: 24px; font-weight: 500; color: #fff; text-decoration: none; position: relative; display: block; background: rgba(0, 0, 0, 0); border: .5px solid rgba(0, 0, 0, 0); transition: border ease-in-out;}
+#values-box a { padding: 15px 0 15px 35px; font-size: 24px; font-weight: 500; color: #fff; text-decoration: none; position: relative; display: block; background: rgba(0, 0, 0, 0); border: 1px solid rgba(0, 0, 0, 0); transition: border ease-in-out;}
 #values-box a:hover {border: .5px solid rgba(0, 0, 0, .8); transition: border ease-in-out; background: rgba(0, 0, 0, .25);}
 
 header { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;}
-header h1 { color: #FFF; font-size: 78px; font-weight: 900;}
-header p { color: #FFF; font-size: 26px; font-weight: 400; text-align: center; padding-top: 10px;}
+header h1 { font-size: 78px; font-weight: 900;}
+header p { font-size: 26px; font-weight: 400; text-align: center; padding-top: 10px;}
