@@ -21,12 +21,9 @@ function navClick(){
 document.addEventListener("DOMContentLoaded", function() {
   var nav = document.getElementById('nav')
 
-  // Attach the scroll event listener to the window
   window.onscroll = function() {
-      // Check if the user has scrolled, and do something
-      if (window.scrollY > 1) { // Adjust the value as needed
+      if (window.scrollY > 1) {
           nav.style.marginLeft = '-100%'
-          // You can add your own actions or functions here
       }
   };
 });
