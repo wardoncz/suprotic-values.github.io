@@ -73,5 +73,5 @@ footer p { font-size: 24px; font-weight: 400; color: #fff; padding: 18px 35px 0 
   .glass-box h1 { padding-top: 10px;}
   footer { height: 15vh; text-align: center;}
   footer p { padding: 0;}
-  .socials { padding-top: 35px;}
+  .socials { padding-top: 35px; width: 50%;}
 }
