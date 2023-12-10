@@ -43,7 +43,7 @@ body { font-family: 'Fira Sans', sans-serif;}
 #nav-icon div:first-child { margin: 0;}
 #nav-icon div { height: 5px; width: 100%; position: relative; display: block; border-radius: 10px; margin-top: 7px; background: #fff;}
 
-#nav { height: 200vh; width: 250px; position: absolute; margin-left: -100%; background: rgba(0, 0, 0, .35); border-right: 1px solid rgba(255, 255, 255, .2); transition: all 1s ease-in-out; backdrop-filter: blur(10px);}
+#nav { height: 200vh; width: 250px; position: absolute; margin-left: -100%; background: rgba(0, 0, 0, .35); border-right: 1px solid rgba(255, 255, 255, .2); transition: all 1s ease-in-out; backdrop-filter: blur(10px); z-index: 10;}
 #values-box { padding: 50px 0 0 0;}
 #values-box a { padding: 15px 0 15px 35px; font-size: 24px; font-weight: 500; color: #fff; text-decoration: none; position: relative; display: block; background: rgba(0, 0, 0, 0); border: 1px solid rgba(0, 0, 0, 0); transition: border ease-in-out;}
 #values-box a:hover {border: 1px solid rgba(255, 255, 255, .2); transition: border ease-in-out; background: rgba(0, 0, 0, .25);}
@@ -66,3 +66,12 @@ footer p { font-size: 24px; font-weight: 400; color: #fff; padding: 18px 35px 0 
 .fb { background: url(../media/fb-logo.png) center no-repeat; background-size: contain;}
 .lin { background: url(../media/linkedin-logo.png) center no-repeat; background-size: contain;}
 .tw { background: url(../media/twitter-logo.png) center no-repeat; background-size: contain;}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .center-box { height: 600px; width: 300px; display: block;}
+  .glass-box { height: 150px; display: block; margin-top: 35px;}
+  .glass-box h1 { padding-top: 10px;}
+  footer { height: 15vh; text-align: center;}
+  footer p { padding: 0;}
+  .socials { padding-top: 35px;}
+}
