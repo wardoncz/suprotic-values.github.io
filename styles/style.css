@@ -58,9 +58,9 @@ header p { font-size: 26px; font-weight: 400; text-align: center; padding-top: 1
 .glass-box h1 { font-size: 32px; font-weight: 700; color: #fff; padding-top: 50px;}
 p { font-size: 12px; font-weight: 400; color: #fff; padding: 20px 25px 0 25px;}
 
-footer { height: 10vh; width: 100%; position: absolute; margin-top: 200vh; text-align: right;}
-footer p { font-size: 24px; font-weight: 400; color: #fff; padding: 18px 35px 0 0;}
-.socials { height: 7.3vh; width: 35%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: right; display: flex; justify-content: space-around;}
+footer { height: 10vh; width: 100%; position: absolute; margin-top: 200vh; text-align: center;}
+footer p { font-size: 24px; font-weight: 400; color: #fff;}
+.socials { height: 10vh; width: 25%; position: absolute; width: 25%; padding-top: 115px; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: right; display: flex; justify-content: space-around;}
 .socials a { height: 45px; width: 45px; position: relative;}
 .ig { background: url(../media/ig-logo.png) center no-repeat; background-size: contain;}
 .fb { background: url(../media/fb-logo.png) center no-repeat; background-size: contain;}
@@ -83,4 +83,18 @@ footer p { font-size: 24px; font-weight: 400; color: #fff; padding: 18px 35px 0 
   footer { height: 30vh; text-align: center;}
   footer p { padding: 0;}
   .socials { padding-top: 20px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1370px) and (orientation: portrait) {
+  .glass-box { width: 200px;}
+  footer { height: 10vh; text-align: center;}
+  footer p { padding: 0;}
+  .socials { padding-top: 55px; width: 35%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1270px) and (orientation: landscape) {
+  .glass-box { width: 250px;}
+  footer { height: 10vh; text-align: center;}
+  footer p { padding: 0;}
+  .socials { padding-top: 55px; width: 25%;}
 }
